@@ -1,12 +1,15 @@
 package quickus.core;
 
+import org.testng.annotations.Test;
+
 public class App extends QuickusAutomation {
 
     SomeSteps someSteps = new SomeSteps();
     OneFeature oneFeature = new OneFeature(someSteps);
 
-    public static void main(String[] args) {
-        QuickusAutomation.run(App.class, args);
+    @Test
+    public void runApp() {
+        QuickusAutomation.run(App.class, null);
     }
 
     @Override
