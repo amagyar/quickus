@@ -1,7 +1,4 @@
-package app;
-
-import quickus.core.QuickusAutomation;
-import quickus.core.QuickusSettings;
+package quickus.core;
 
 public class App extends QuickusAutomation {
 

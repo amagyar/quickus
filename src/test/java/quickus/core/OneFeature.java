@@ -1,7 +1,6 @@
-package app;
+package quickus.core;
 
-import quickus.core.Feature;
-import quickus.core.FeatureDescription;
+import quickus.annotations.FeatureDescription;
 
 import static quickus.core.Feature.feature;
 

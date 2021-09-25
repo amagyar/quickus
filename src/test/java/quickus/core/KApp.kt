@@ -1,4 +1,4 @@
-package app
+package quickus.core
 
 import quickus.core.QuickusAutomation
 

@@ -1,5 +1,7 @@
 package quickus.core;
 
+import quickus.types.StepType;
+
 import java.util.*;
 
 public class Feature {
@@ -10,6 +12,7 @@ public class Feature {
         return new Feature();
     }
 
+    @Deprecated
     public void report(String description) {
         System.out.println();
         System.out.println("----------");

@@ -1,5 +1,7 @@
 package quickus.core;
 
+import quickus.types.StepType;
+
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.regex.Matcher;
@@ -43,7 +45,7 @@ public class ExecutableStep {
 
     public void report(String sentence) {
         String parsedSentence = parseSentence(sentence);
-        // pass to report
+        // TODO pass to reports
         System.out.println(stepType + " " + parsedSentence);
     }
 

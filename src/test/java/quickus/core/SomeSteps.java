@@ -1,7 +1,6 @@
-package app;
+package quickus.core;
 
-import quickus.core.QuickusStep;
-import quickus.core.Step;
+import quickus.annotations.Step;
 
 class SomeSteps {
     protected Bean bean = new Bean();
@@ -10,13 +9,13 @@ class SomeSteps {
     public QuickusStep walk = (ctx) -> {
         int miles = ctx.getParameter("miles", Integer.class);
         bean.name = "Test";
-        System.out.println("app.Bean name " + bean.name);
+        System.out.println("quickus.app.Bean name " + bean.name);
     };
 
     @Step("I run ${miles} miles in ${hours} hours")
     public QuickusStep run = (ctx) -> {
         int miles = ctx.getParameter("miles", Integer.class);
-        System.out.println("app.Bean name " + bean.name);
+        System.out.println("quickus.app.Bean name " + bean.name);
         bean.name = "Boo-ya";
     };
 }

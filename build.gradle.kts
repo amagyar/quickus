@@ -14,10 +14,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.21")
 }
 
-application {
-    mainClass.set("app.App")
-}
-
 tasks.test {
     useTestNG()
 }
